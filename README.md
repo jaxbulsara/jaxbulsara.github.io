@@ -1,2 +1,2 @@
-# jaxbulsara.github.io
-Jay Bulsara
+# Future site for Jay Bulsara's portfolio and blog.
+
