@@ -1,8 +1,14 @@
+# jekyll
 _site
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
 vendor
+Gemfile.lock
 
 # docker
-run_container.sh
+build.sh
+serve.sh
+
+# vs code
+workspace.code-workspace
