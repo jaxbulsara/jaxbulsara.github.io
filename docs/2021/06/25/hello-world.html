@@ -3,23 +3,24 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Hello World | Jay Bulsara</title>
+<title>Hello World! | Jay Bulsara</title>
 <meta name="generator" content="Jekyll v4.2.0" />
-<meta property="og:title" content="Hello World" />
+<meta property="og:title" content="Hello World!" />
+<meta name="author" content="Jay Bulsara" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Hello World!" />
-<meta property="og:description" content="Hello World!" />
-<link rel="canonical" href="http://0.0.0.0:4000/2021/06/25/hello-world.html" />
-<meta property="og:url" content="http://0.0.0.0:4000/2021/06/25/hello-world.html" />
+<meta name="description" content="Today’s the day I got my site up and running. Here’s how I did it." />
+<meta property="og:description" content="Today’s the day I got my site up and running. Here’s how I did it." />
+<link rel="canonical" href="https://jaybulsara.dev/2021/06/25/hello-world.html" />
+<meta property="og:url" content="https://jaybulsara.dev/2021/06/25/hello-world.html" />
 <meta property="og:site_name" content="Jay Bulsara" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2021-06-25T00:00:00-05:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Hello World" />
+<meta property="twitter:title" content="Hello World!" />
 <script type="application/ld+json">
-{"url":"http://0.0.0.0:4000/2021/06/25/hello-world.html","@type":"BlogPosting","description":"Hello World!","headline":"Hello World","dateModified":"2021-06-25T00:00:00-05:00","datePublished":"2021-06-25T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://0.0.0.0:4000/2021/06/25/hello-world.html"},"@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"Jay Bulsara"},"url":"https://jaybulsara.dev/2021/06/25/hello-world.html","description":"Today’s the day I got my site up and running. Here’s how I did it.","@type":"BlogPosting","headline":"Hello World!","dateModified":"2021-06-25T00:00:00-05:00","datePublished":"2021-06-25T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://jaybulsara.dev/2021/06/25/hello-world.html"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://0.0.0.0:4000/feed.xml" title="Jay Bulsara" /></head>
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://jaybulsara.dev/feed.xml" title="Jay Bulsara" /></head>
 <body><header class="site-header" role="banner">
 
   <div class="wrapper"><a class="site-title" rel="author" href="/">Jay Bulsara</a><nav class="site-nav">
@@ -40,14 +41,183 @@
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Hello World</h1>
+    <h1 class="post-title p-name" itemprop="name headline">Hello World!</h1>
     <p class="post-meta">
       <time class="dt-published" datetime="2021-06-25T00:00:00-05:00" itemprop="datePublished">Jun 25, 2021
       </time></p>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <h1 id="hello-world">Hello World!</h1>
+    <p>Today’s the day I got my site up and running. Here’s how I did it.</p>
+
+<h2 id="environment">Environment</h2>
+
+<p>I am working on Windows 10 with the Windows Subsystem for Linux (WSL) and Ubuntu installed. I’ve set up Windows Terminal and VS code to have a complete Linux development environment.</p>
+
+<p>I also have Docker Desktop installed. I enabled <code class="language-plaintext highlighter-rouge">Use the WSL 2 based engine</code> so that I could use Docker within the WSL terminal. I use Docker to build my site with Jekyll so I don’t have to install all of the dependencies myself.</p>
+
+<h2 id="buying-the-domain">Buying the domain</h2>
+
+<p>I bought the domains <code class="language-plaintext highlighter-rouge">jaybulsara.dev</code> and <code class="language-plaintext highlighter-rouge">jaybulsara.com</code> from <a href="https://domains.google.com">Google Domains</a>. During the setup, I added an email server to <code class="language-plaintext highlighter-rouge">jaybulsara.dev</code>.</p>
+
+<p>I wanted <code class="language-plaintext highlighter-rouge">jaybulsara.dev</code> to be my main website, so I set up <code class="language-plaintext highlighter-rouge">jaybulsara.com</code> to forward to the <code class="language-plaintext highlighter-rouge">.dev</code> address. I found the setting to forward the address under the <code class="language-plaintext highlighter-rouge">Website</code> tab of the domain management page.</p>
+
+<h2 id="setting-up-github-pages">Setting up GitHub Pages</h2>
+
+<p>I used <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site">this guide</a> to set up the GitHub Page for my account.</p>
+
+<p>Once I created the <code class="language-plaintext highlighter-rouge">jaxbulsara.github.io</code> repository and enabled GitHub Pages, I cloned the repository to my computer:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git clone https://github.com/jaxbulsara/jaxbulsara.github.io
+</code></pre></div></div>
+
+<p>To push changes, you have to create a personal access token on GitHub under <a href="https://github.com/settings/tokens">Settings &gt; Developer settings &gt; Personal access tokens</a>. This will be your password when you log in from the command line.</p>
+
+<h2 id="configuring-my-github-page-as-jaybulsaradev">Configuring my GitHub page as ‘jaybulsara.dev’</h2>
+
+<p>To make my own domain, <code class="language-plaintext highlighter-rouge">jaybulsara.dev</code>, be my GitHub page, I followed <a href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site">this guide</a>. Since I wanted to use the top-level domain, so I followed the steps under <a href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain-and-the-www-subdomain-variant">Configuring an apex domain and the www subdomain variant</a>.</p>
+
+<p>The DNS settings in Google Domains are in the <code class="language-plaintext highlighter-rouge">DNS</code> tab of the domain management page. Under <code class="language-plaintext highlighter-rouge">Resource records &gt; Custom records &gt; Manage custom records</code>, I created the following records:</p>
+
+<p><img src="/assets/images/2021-06-25-google-domains-dns-records-setup-for-github-pages.png" alt="Google domains custom records setup." /></p>
+
+<p>Leave the <code class="language-plaintext highlighter-rouge">hostname</code> for the <code class="language-plaintext highlighter-rouge">A</code> record blank to indicate the top-level domain. The <code class="language-plaintext highlighter-rouge">hostname</code> for the <code class="language-plaintext highlighter-rouge">CNAME</code> record should be <code class="language-plaintext highlighter-rouge">www</code>.</p>
+
+<p>I think I had to remove and re-add the custom domain on GitHub. I definitely did it wrong a few times times. But once the DNS records were in, the custom domain was added successfully. I checked the <code class="language-plaintext highlighter-rouge">Enforce HTTPS</code> option. This is how the <code class="language-plaintext highlighter-rouge">Pages</code> setting page looked when I was done:</p>
+
+<p><img src="/assets/images/2021-06-25-github-pages-custom-domain-setup-final.png" alt="GitHub Pages setting page after configuration." /></p>
+
+<p>Now whenever I go to <a href="https://jaybulsara.dev">jaybulsara.dev</a>, my browser will automatically load my GitHub page.</p>
+
+<h2 id="creating-the-jekyll-site">Creating the Jekyll site</h2>
+
+<h3 id="initializing-jekyll">Initializing Jekyll</h3>
+
+<p>I cloned the <code class="language-plaintext highlighter-rouge">jaxbulsara.github.io</code> repository to <code class="language-plaintext highlighter-rouge">~/code/personal/jaxbulsara.github.io</code>. So all of the commands below will be run from that directory.</p>
+
+<p>I wanted to try and use Docker to do everything Jekyll related, so I found this post, <a href="https://medium.com/@sebagomez/setting-up-a-github-page-with-jekyll-and-a-docker-container-c712e448649b">Setting up a GitHub page with Jekyll and a Docker container</a>, by <a href="https://medium.com/@sebagomez">Sebastian Gomez</a>. Since I’m super new to Docker, this was a great help.</p>
+
+<p>I used the following command to initialize the Jekyll page:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>docker run <span class="nt">--rm</span> <span class="nt">-v</span> <span class="sb">`</span><span class="nb">pwd</span><span class="sb">`</span>:/srv/jekyll/ jekyll/jekyll jekyll init <span class="nb">.</span>
+</code></pre></div></div>
+
+<p>Breaking down the command:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">docker run</code> - Runs a Docker container.</li>
+  <li><code class="language-plaintext highlighter-rouge">--rm</code> - Deletes the container when it exits.</li>
+  <li><code class="language-plaintext highlighter-rouge">-v `pwd`:/srv/jekyll/ </code>
+    <ul>
+      <li>The <code class="language-plaintext highlighter-rouge">-v</code> flag mounts a volume on my local machine to a directory in the container</li>
+      <li><code class="language-plaintext highlighter-rouge">`pwd`:/srv/jekyll/</code> mounts the current directory (from the subcommand <code class="language-plaintext highlighter-rouge">pwd</code>) to <code class="language-plaintext highlighter-rouge">/srv/jekyll/</code> inside the container</li>
+    </ul>
+  </li>
+  <li><code class="language-plaintext highlighter-rouge">jekyll/jekyll</code> - After all the flags, this is the name of the container to run. <a href="https://hub.docker.com/r/jekyll/jekyll/">jekyll/jekyll</a> is a container that already contains all the Jekyll dependencies you need to work with Jekyll sites.</li>
+  <li><code class="language-plaintext highlighter-rouge">jekyll init .</code> - This is the command that is run inside the container. <code class="language-plaintext highlighter-rouge">.</code> resolves to <code class="language-plaintext highlighter-rouge">/srv/jekyll/</code> since the container <a href="https://github.com/envygeeks/jekyll-docker/blob/575057ab5f14055e161b871e75f8295afd571aa9/repos/jekyll/Dockerfile#L191">sets its working directory there</a>. Then, since I mounted my own directory to <code class="language-plaintext highlighter-rouge">/srv/jekyll/</code>, the path further resolves to <code class="language-plaintext highlighter-rouge">~/code/personal/jaxbulsara.github.io</code>. <code class="language-plaintext highlighter-rouge">jekyll init</code> will set up all of the files and directory it needs for a basic Jekyll site.</li>
+</ul>
+
+<h3 id="changing-defaults">Changing defaults</h3>
+
+<p>I tinkered with the site a lot until it looked good and I started writing this blog post. Here, I’ll summarize what I did as if I know what I’m doing (I don’t) to get the site to this point. This is just the starting point though, and all of it will change in the future.</p>
+
+<p>I deleted the following files the default Jekyll stuff:</p>
+
+<ul>
+  <li>404.html</li>
+  <li>about.markdown</li>
+  <li>The ‘welcome-to-jekyll’ post</li>
+  <li>Gemfile.lock</li>
+</ul>
+
+<p>I then changed the default content of the rest to the following:</p>
+
+<p><code class="language-plaintext highlighter-rouge">Gemfile</code>:</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># file: Gemfile</span>
+
+<span class="n">source</span> <span class="s2">"https://rubygems.org"</span>
+
+<span class="n">gem</span> <span class="s2">"jekyll"</span><span class="p">,</span> <span class="s2">"~&gt; 4.2.0"</span>
+<span class="n">gem</span> <span class="s2">"minima"</span>
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">_config.yml</code>:</p>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># file: _config.yml</span>
+
+<span class="c1"># info</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s">Jay Bulsara</span>
+<span class="na">author</span><span class="pi">:</span> <span class="s">Jay Bulsara</span>
+<span class="na">email</span><span class="pi">:</span> <span class="s">jay@jaybulsara.dev</span>
+<span class="na">description</span><span class="pi">:</span> <span class="pi">&gt;</span>
+  <span class="s">This is my website. If it looks bad, email me about it!</span>
+
+<span class="c1"># social links</span>
+<span class="na">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">https://jaybulsara.dev"</span>
+<span class="na">github_username</span><span class="pi">:</span> <span class="s">jaxbulsara</span>
+<span class="na">rss</span><span class="pi">:</span> <span class="s">rss</span>
+
+<span class="c1"># theme</span>
+<span class="na">minima</span><span class="pi">:</span>
+  <span class="na">date_format</span><span class="pi">:</span> <span class="s2">"</span><span class="s">%b</span><span class="nv"> </span><span class="s">%-d,</span><span class="nv"> </span><span class="s">%Y"</span>
+
+<span class="c1"># build</span>
+<span class="na">theme</span><span class="pi">:</span> <span class="s">minima</span>
+<span class="na">destination</span><span class="pi">:</span> <span class="s">docs</span>
+<span class="na">exclude</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">.liquidrc</span>
+  <span class="pi">-</span> <span class="s">README.md</span>
+  <span class="pi">-</span> <span class="s">build.sh</span>
+  <span class="pi">-</span> <span class="s">serve.sh</span>
+  <span class="pi">-</span> <span class="s">workspace.code-workspace</span>
+<span class="na">plugins</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">jekyll-feed</span>
+  <span class="pi">-</span> <span class="s">jekyll-seo-tag</span>
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">index.md</code>:</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- file: index.md --&gt;</span>
+<span class="p">
+---</span>
+<span class="gh">layout: home
+---
+</span>
+<span class="gh"># Jay Bulsara</span>
+
+<span class="p">```</span><span class="nl">python
+</span><span class="o">&gt;&gt;&gt;</span> <span class="n">failure</span> <span class="o">==</span> <span class="n">success</span>
+<span class="bp">True</span>
+<span class="p">```</span>
+</code></pre></div></div>
+
+<h3 id="building-the-site">Building the site</h3>
+
+<p>I used Docker to build and preview the site on my local computer too. For this, I made three shell scripts:</p>
+
+<p><code class="language-plaintext highlighter-rouge">shell.sh</code></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run <span class="nt">--rm</span> <span class="nt">-v</span> <span class="sb">`</span><span class="nb">pwd</span><span class="sb">`</span>:/srv/jekyll/ <span class="nt">-p</span> 4000:4000 <span class="nt">-it</span> jekyll/jekyll bash
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">build.sh</code></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run <span class="nt">--rm</span> <span class="nt">-v</span> <span class="sb">`</span><span class="nb">pwd</span><span class="sb">`</span>:/srv/jekyll/ jekyll/jekyll jekyll build
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">serve.sh</code></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run <span class="nt">--rm</span> <span class="nt">-v</span> <span class="sb">`</span><span class="nb">pwd</span><span class="sb">`</span>:/srv/jekyll/ <span class="nt">-p</span> 4000:4000 jekyll/jekyll jekyll serve
+</code></pre></div></div>
+
+<p>I made them executable with:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">chmod </span>u+x <span class="o">{</span>filename<span class="o">}</span>
+</code></pre></div></div>
+
+<p>I used <code class="language-plaintext highlighter-rouge">shell.sh</code> when I was actively developing so that I could work in a bash instance within the container. If I don’t need to enter the container, then I run <code class="language-plaintext highlighter-rouge">build.sh</code> or <code class="language-plaintext highlighter-rouge">serve.sh</code> whenever I need to rebuild the site or preview it at <code class="language-plaintext highlighter-rouge">http://0.0.0.0:4000</code>.</p>
+
+<p>Making a new container every time makes all of the dependencies download again. It does take longer, but I like that I will always build the site based on the absolute latest versions of every dependency. In the long run, waiting a little more to build the site is worth it to never have the site become outdated.</p>
+
+<p>When the site is built and it looks alright in the preview, I commit the changes and push the repository back to GitHub to update my GitHub page.</p>
 
   </div><a class="u-url" href="/2021/06/25/hello-world.html" hidden></a>
 </article>
@@ -66,11 +236,12 @@
           <li class="p-name">Jay Bulsara</li><li><a class="u-email" href="mailto:jay@jaybulsara.dev">jay@jaybulsara.dev</a></li></ul>
       </div>
 
-      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/jaxbulsara"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">jaxbulsara</span></a></li></ul>
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/jaxbulsara"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">jaxbulsara</span></a></li><li><a href="/feed.xml"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#rss"></use></svg> <span>rss</span></a></li></ul>
 </div>
 
       <div class="footer-col footer-col-3">
-        <p>This is my website. If it looks bad, email me about it!</p>
+        <p>This is my website. If it looks bad, email me about it!
+</p>
       </div>
     </div>
 

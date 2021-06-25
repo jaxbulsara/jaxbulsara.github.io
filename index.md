@@ -4,7 +4,7 @@ layout: home
 
 # Jay Bulsara
 
-```py
+```python
 >>> failure == success
 True
 ```

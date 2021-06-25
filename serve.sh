@@ -1,1 +1,1 @@
-docker run --rm -v `pwd`:/srv/jekyll -p 4000:4000 jekyll/jekyll jekyll serve
+docker run --rm -v `pwd`:/srv/jekyll/ -p 4000:4000 jekyll/jekyll jekyll serve

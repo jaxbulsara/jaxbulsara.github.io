@@ -70,8 +70,8 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll (~> 4.2.0)
-  jekyll-feed
   minima
+  rouge
 
 BUNDLED WITH
    2.2.2

@@ -1,1 +1,171 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2021-06-25T10:03:16-05:00</updated><id>http://0.0.0.0:4000/feed.xml</id><title type="html">Jay Bulsara</title><subtitle>This is my website. If it looks bad, email me about it!</subtitle><entry><title type="html">Hello World</title><link href="http://0.0.0.0:4000/2021/06/25/hello-world.html" rel="alternate" type="text/html" title="Hello World" /><published>2021-06-25T00:00:00-05:00</published><updated>2021-06-25T00:00:00-05:00</updated><id>http://0.0.0.0:4000/2021/06/25/hello-world</id><content type="html" xml:base="http://0.0.0.0:4000/2021/06/25/hello-world.html">&lt;h1 id=&quot;hello-world&quot;&gt;Hello World!&lt;/h1&gt;</content><author><name></name></author><summary type="html">Hello World!</summary></entry></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://jaybulsara.dev/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jaybulsara.dev/" rel="alternate" type="text/html" /><updated>2021-06-25T15:09:54-05:00</updated><id>https://jaybulsara.dev/feed.xml</id><title type="html">Jay Bulsara</title><subtitle>This is my website. If it looks bad, email me about it!
+</subtitle><author><name>Jay Bulsara</name></author><entry><title type="html">Hello World!</title><link href="https://jaybulsara.dev/2021/06/25/hello-world.html" rel="alternate" type="text/html" title="Hello World!" /><published>2021-06-25T00:00:00-05:00</published><updated>2021-06-25T00:00:00-05:00</updated><id>https://jaybulsara.dev/2021/06/25/hello-world</id><content type="html" xml:base="https://jaybulsara.dev/2021/06/25/hello-world.html">&lt;p&gt;Today’s the day I got my site up and running. Here’s how I did it.&lt;/p&gt;
+
+&lt;h2 id=&quot;environment&quot;&gt;Environment&lt;/h2&gt;
+
+&lt;p&gt;I am working on Windows 10 with the Windows Subsystem for Linux (WSL) and Ubuntu installed. I’ve set up Windows Terminal and VS code to have a complete Linux development environment.&lt;/p&gt;
+
+&lt;p&gt;I also have Docker Desktop installed. I enabled &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Use the WSL 2 based engine&lt;/code&gt; so that I could use Docker within the WSL terminal. I use Docker to build my site with Jekyll so I don’t have to install all of the dependencies myself.&lt;/p&gt;
+
+&lt;h2 id=&quot;buying-the-domain&quot;&gt;Buying the domain&lt;/h2&gt;
+
+&lt;p&gt;I bought the domains &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jaybulsara.dev&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jaybulsara.com&lt;/code&gt; from &lt;a href=&quot;https://domains.google.com&quot;&gt;Google Domains&lt;/a&gt;. During the setup, I added an email server to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jaybulsara.dev&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;I wanted &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jaybulsara.dev&lt;/code&gt; to be my main website, so I set up &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jaybulsara.com&lt;/code&gt; to forward to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.dev&lt;/code&gt; address. I found the setting to forward the address under the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Website&lt;/code&gt; tab of the domain management page.&lt;/p&gt;
+
+&lt;h2 id=&quot;setting-up-github-pages&quot;&gt;Setting up GitHub Pages&lt;/h2&gt;
+
+&lt;p&gt;I used &lt;a href=&quot;https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site&quot;&gt;this guide&lt;/a&gt; to set up the GitHub Page for my account.&lt;/p&gt;
+
+&lt;p&gt;Once I created the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jaxbulsara.github.io&lt;/code&gt; repository and enabled GitHub Pages, I cloned the repository to my computer:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git clone https://github.com/jaxbulsara/jaxbulsara.github.io
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;To push changes, you have to create a personal access token on GitHub under &lt;a href=&quot;https://github.com/settings/tokens&quot;&gt;Settings &amp;gt; Developer settings &amp;gt; Personal access tokens&lt;/a&gt;. This will be your password when you log in from the command line.&lt;/p&gt;
+
+&lt;h2 id=&quot;configuring-my-github-page-as-jaybulsaradev&quot;&gt;Configuring my GitHub page as ‘jaybulsara.dev’&lt;/h2&gt;
+
+&lt;p&gt;To make my own domain, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jaybulsara.dev&lt;/code&gt;, be my GitHub page, I followed &lt;a href=&quot;https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site&quot;&gt;this guide&lt;/a&gt;. Since I wanted to use the top-level domain, so I followed the steps under &lt;a href=&quot;https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain-and-the-www-subdomain-variant&quot;&gt;Configuring an apex domain and the www subdomain variant&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The DNS settings in Google Domains are in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DNS&lt;/code&gt; tab of the domain management page. Under &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Resource records &amp;gt; Custom records &amp;gt; Manage custom records&lt;/code&gt;, I created the following records:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2021-06-25-google-domains-dns-records-setup-for-github-pages.png&quot; alt=&quot;Google domains custom records setup.&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Leave the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hostname&lt;/code&gt; for the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;A&lt;/code&gt; record blank to indicate the top-level domain. The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hostname&lt;/code&gt; for the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CNAME&lt;/code&gt; record should be &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;www&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;I think I had to remove and re-add the custom domain on GitHub. I definitely did it wrong a few times times. But once the DNS records were in, the custom domain was added successfully. I checked the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Enforce HTTPS&lt;/code&gt; option. This is how the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Pages&lt;/code&gt; setting page looked when I was done:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/2021-06-25-github-pages-custom-domain-setup-final.png&quot; alt=&quot;GitHub Pages setting page after configuration.&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now whenever I go to &lt;a href=&quot;https://jaybulsara.dev&quot;&gt;jaybulsara.dev&lt;/a&gt;, my browser will automatically load my GitHub page.&lt;/p&gt;
+
+&lt;h2 id=&quot;creating-the-jekyll-site&quot;&gt;Creating the Jekyll site&lt;/h2&gt;
+
+&lt;h3 id=&quot;initializing-jekyll&quot;&gt;Initializing Jekyll&lt;/h3&gt;
+
+&lt;p&gt;I cloned the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jaxbulsara.github.io&lt;/code&gt; repository to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~/code/personal/jaxbulsara.github.io&lt;/code&gt;. So all of the commands below will be run from that directory.&lt;/p&gt;
+
+&lt;p&gt;I wanted to try and use Docker to do everything Jekyll related, so I found this post, &lt;a href=&quot;https://medium.com/@sebagomez/setting-up-a-github-page-with-jekyll-and-a-docker-container-c712e448649b&quot;&gt;Setting up a GitHub page with Jekyll and a Docker container&lt;/a&gt;, by &lt;a href=&quot;https://medium.com/@sebagomez&quot;&gt;Sebastian Gomez&lt;/a&gt;. Since I’m super new to Docker, this was a great help.&lt;/p&gt;
+
+&lt;p&gt;I used the following command to initialize the Jekyll page:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;docker run &lt;span class=&quot;nt&quot;&gt;--rm&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt; &lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;pwd&lt;/span&gt;&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;:/srv/jekyll/ jekyll/jekyll jekyll init &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Breaking down the command:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker run&lt;/code&gt; - Runs a Docker container.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--rm&lt;/code&gt; - Deletes the container when it exits.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-v `pwd`:/srv/jekyll/ &lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-v&lt;/code&gt; flag mounts a volume on my local machine to a directory in the container&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;`pwd`:/srv/jekyll/&lt;/code&gt; mounts the current directory (from the subcommand &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pwd&lt;/code&gt;) to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/srv/jekyll/&lt;/code&gt; inside the container&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll/jekyll&lt;/code&gt; - After all the flags, this is the name of the container to run. &lt;a href=&quot;https://hub.docker.com/r/jekyll/jekyll/&quot;&gt;jekyll/jekyll&lt;/a&gt; is a container that already contains all the Jekyll dependencies you need to work with Jekyll sites.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll init .&lt;/code&gt; - This is the command that is run inside the container. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.&lt;/code&gt; resolves to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/srv/jekyll/&lt;/code&gt; since the container &lt;a href=&quot;https://github.com/envygeeks/jekyll-docker/blob/575057ab5f14055e161b871e75f8295afd571aa9/repos/jekyll/Dockerfile#L191&quot;&gt;sets its working directory there&lt;/a&gt;. Then, since I mounted my own directory to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/srv/jekyll/&lt;/code&gt;, the path further resolves to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~/code/personal/jaxbulsara.github.io&lt;/code&gt;. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll init&lt;/code&gt; will set up all of the files and directory it needs for a basic Jekyll site.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;changing-defaults&quot;&gt;Changing defaults&lt;/h3&gt;
+
+&lt;p&gt;I tinkered with the site a lot until it looked good and I started writing this blog post. Here, I’ll summarize what I did as if I know what I’m doing (I don’t) to get the site to this point. This is just the starting point though, and all of it will change in the future.&lt;/p&gt;
+
+&lt;p&gt;I deleted the following files the default Jekyll stuff:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;404.html&lt;/li&gt;
+  &lt;li&gt;about.markdown&lt;/li&gt;
+  &lt;li&gt;The ‘welcome-to-jekyll’ post&lt;/li&gt;
+  &lt;li&gt;Gemfile.lock&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I then changed the default content of the rest to the following:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# file: Gemfile&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;source&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;https://rubygems.org&quot;&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;jekyll&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;~&amp;gt; 4.2.0&quot;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;minima&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-yml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# file: _config.yml&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# info&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Jay Bulsara&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;author&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;Jay Bulsara&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;email&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;jay@jaybulsara.dev&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;This is my website. If it looks bad, email me about it!&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# social links&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;https://jaybulsara.dev&quot;&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;github_username&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;jaxbulsara&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;rss&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;rss&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# theme&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;minima&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;date_format&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;%b&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;%-d,&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;%Y&quot;&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# build&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;theme&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;minima&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;destination&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;docs&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;exclude&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;.liquidrc&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;README.md&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;build.sh&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;serve.sh&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;workspace.code-workspace&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;plugins&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;jekyll-feed&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;jekyll-seo-tag&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;index.md&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-markdown highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;&amp;lt;!-- file: index.md --&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;
+---&lt;/span&gt;
+&lt;span class=&quot;gh&quot;&gt;layout: home
+---
+&lt;/span&gt;
+&lt;span class=&quot;gh&quot;&gt;# Jay Bulsara&lt;/span&gt;
+
+&lt;span class=&quot;p&quot;&gt;```&lt;/span&gt;&lt;span class=&quot;nl&quot;&gt;python
+&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;failure&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;success&lt;/span&gt;
+&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;```&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;building-the-site&quot;&gt;Building the site&lt;/h3&gt;
+
+&lt;p&gt;I used Docker to build and preview the site on my local computer too. For this, I made three shell scripts:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;shell.sh&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker run &lt;span class=&quot;nt&quot;&gt;--rm&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt; &lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;pwd&lt;/span&gt;&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;:/srv/jekyll/ &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; 4000:4000 &lt;span class=&quot;nt&quot;&gt;-it&lt;/span&gt; jekyll/jekyll bash
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;build.sh&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker run &lt;span class=&quot;nt&quot;&gt;--rm&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt; &lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;pwd&lt;/span&gt;&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;:/srv/jekyll/ jekyll/jekyll jekyll build
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;serve.sh&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker run &lt;span class=&quot;nt&quot;&gt;--rm&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt; &lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;pwd&lt;/span&gt;&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;:/srv/jekyll/ &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; 4000:4000 jekyll/jekyll jekyll serve
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;I made them executable with:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;chmod &lt;/span&gt;u+x &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;filename&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;I used &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;shell.sh&lt;/code&gt; when I was actively developing so that I could work in a bash instance within the container. If I don’t need to enter the container, then I run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;build.sh&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;serve.sh&lt;/code&gt; whenever I need to rebuild the site or preview it at &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;http://0.0.0.0:4000&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Making a new container every time makes all of the dependencies download again. It does take longer, but I like that I will always build the site based on the absolute latest versions of every dependency. In the long run, waiting a little more to build the site is worth it to never have the site become outdated.&lt;/p&gt;
+
+&lt;p&gt;When the site is built and it looks alright in the preview, I commit the changes and push the repository back to GitHub to update my GitHub page.&lt;/p&gt;</content><author><name>Jay Bulsara</name></author><summary type="html">Today’s the day I got my site up and running. Here’s how I did it.</summary></entry></feed>

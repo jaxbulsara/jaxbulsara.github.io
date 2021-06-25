@@ -1,17 +1,29 @@
+# info
 title: Jay Bulsara
+author: Jay Bulsara
 email: jay@jaybulsara.dev
-description: >- # this means to ignore newlines until "baseurl:"
+description: >
   This is my website. If it looks bad, email me about it!
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://jaybulsara.dev" # the base hostname & protocol for your site, e.g. http://example.com
-github_username: jaxbulsara
 
+# social links
+url: "https://jaybulsara.dev"
+github_username: jaxbulsara
+rss: rss
+
+# theme
+minima:
+  date_format: "%b %-d, %Y"
+
+# build
 theme: minima
 destination: docs
-
 exclude:
   - .liquidrc
   - README.md
   - build.sh
   - serve.sh
+  - shell.sh
   - workspace.code-workspace
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
