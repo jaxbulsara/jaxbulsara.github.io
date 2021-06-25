@@ -1,5 +1,4 @@
 ---
-layout: home
 ---
 
 # Jay Bulsara
