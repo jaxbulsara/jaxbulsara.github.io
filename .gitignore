@@ -5,9 +5,5 @@ _site
 .jekyll-metadata
 vendor
 
-# docker
-build.sh
-serve.sh
-
 # vs code
 workspace.code-workspace
