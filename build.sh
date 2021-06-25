@@ -1,1 +1,1 @@
-docker run --rm -v `pwd`:/srv/jekyll jekyll/jekyll jekyll build --incremental
+docker run --rm -v `pwd`:/srv/jekyll jekyll/jekyll jekyll build
