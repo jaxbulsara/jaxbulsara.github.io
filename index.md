@@ -8,3 +8,7 @@ layout: home
 >>> failure == success
 True
 ```
+
+## Posts
+
+{% include post_list.html %}
