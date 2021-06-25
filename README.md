@@ -1,4 +1,3 @@
-# Jay Bulsara's site is under construction.
+# Jay Bulsara's website
 
-This is the future site for Jay Bulsara's portfolio and blog.
-
+This is my portfolio and blog.
