@@ -10,7 +10,6 @@ theme: minima
 destination: docs
 
 exclude:
-  - CNAME
   - .liquidrc
   - README.md
   - build.sh
