@@ -39,7 +39,7 @@ The DNS settings in Google Domains are in the `DNS` tab of the domain management
 
 Leave the `hostname` for the `A` record blank to indicate the top-level domain. The `hostname` for the `CNAME` record should be `www`.
 
-I think I had to remove and re-add the custom domain on GitHub. I definitely did it wrong a few times times. But once the DNS records were in, the custom domain was added successfully. I checked the `Enforce HTTPS` option. This is how the `Pages` setting page looked when I was done:
+I think I had to remove and re-add the custom domain on GitHub. I definitely did it wrong a few times. But once the DNS records were in, the custom domain was added successfully. I checked the `Enforce HTTPS` option. This is how the `Pages` setting page looked when I was done:
 
 ![GitHub Pages setting page after configuration.](/assets/images/2021-06-25-github-pages-custom-domain-setup-final.png)
 
@@ -73,7 +73,7 @@ Breaking down the command:
 
 I tinkered with the site a lot until it looked good and I started writing this blog post. Here, I'll summarize what I did as if I know what I'm doing (I don't) to get the site to this point. This is just the starting point though, and all of it will change in the future.
 
-I deleted the following files the default Jekyll stuff:
+I deleted the following files from the default Jekyll stuff:
 
 - 404.html
 - about.markdown

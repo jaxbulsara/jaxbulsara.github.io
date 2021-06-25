@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://jaybulsara.dev/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jaybulsara.dev/" rel="alternate" type="text/html" /><updated>2021-06-25T15:09:54-05:00</updated><id>https://jaybulsara.dev/feed.xml</id><title type="html">Jay Bulsara</title><subtitle>This is my website. If it looks bad, email me about it!
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://jaybulsara.dev/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jaybulsara.dev/" rel="alternate" type="text/html" /><updated>2021-06-25T15:27:38-05:00</updated><id>https://jaybulsara.dev/feed.xml</id><title type="html">Jay Bulsara</title><subtitle>This is my website. If it looks bad, email me about it!
 </subtitle><author><name>Jay Bulsara</name></author><entry><title type="html">Hello World!</title><link href="https://jaybulsara.dev/2021/06/25/hello-world.html" rel="alternate" type="text/html" title="Hello World!" /><published>2021-06-25T00:00:00-05:00</published><updated>2021-06-25T00:00:00-05:00</updated><id>https://jaybulsara.dev/2021/06/25/hello-world</id><content type="html" xml:base="https://jaybulsara.dev/2021/06/25/hello-world.html">&lt;p&gt;Today’s the day I got my site up and running. Here’s how I did it.&lt;/p&gt;
 
 &lt;h2 id=&quot;environment&quot;&gt;Environment&lt;/h2&gt;
@@ -34,7 +34,7 @@
 
 &lt;p&gt;Leave the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hostname&lt;/code&gt; for the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;A&lt;/code&gt; record blank to indicate the top-level domain. The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hostname&lt;/code&gt; for the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CNAME&lt;/code&gt; record should be &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;www&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;I think I had to remove and re-add the custom domain on GitHub. I definitely did it wrong a few times times. But once the DNS records were in, the custom domain was added successfully. I checked the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Enforce HTTPS&lt;/code&gt; option. This is how the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Pages&lt;/code&gt; setting page looked when I was done:&lt;/p&gt;
+&lt;p&gt;I think I had to remove and re-add the custom domain on GitHub. I definitely did it wrong a few times. But once the DNS records were in, the custom domain was added successfully. I checked the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Enforce HTTPS&lt;/code&gt; option. This is how the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Pages&lt;/code&gt; setting page looked when I was done:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/2021-06-25-github-pages-custom-domain-setup-final.png&quot; alt=&quot;GitHub Pages setting page after configuration.&quot; /&gt;&lt;/p&gt;
 
@@ -72,7 +72,7 @@
 
 &lt;p&gt;I tinkered with the site a lot until it looked good and I started writing this blog post. Here, I’ll summarize what I did as if I know what I’m doing (I don’t) to get the site to this point. This is just the starting point though, and all of it will change in the future.&lt;/p&gt;
 
-&lt;p&gt;I deleted the following files the default Jekyll stuff:&lt;/p&gt;
+&lt;p&gt;I deleted the following files from the default Jekyll stuff:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;404.html&lt;/li&gt;

@@ -17,6 +17,7 @@ minima:
 # build
 theme: minima
 destination: docs
+show_excerpts: true
 exclude:
   - .liquidrc
   - README.md
